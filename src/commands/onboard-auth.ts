@@ -68,10 +68,5 @@ export {
   MOONSHOT_DEFAULT_MODEL_ID,
   MOONSHOT_DEFAULT_MODEL_REF,
 } from "./onboard-auth.models.js";
-export {
-  buildTogetherModelDefinition,
-  TOGETHER_BASE_URL,
-  TOGETHER_DEFAULT_MODEL_ID,
-  TOGETHER_DEFAULT_MODEL_REF,
-  TOGETHER_MODEL_CATALOG,
-} from "../agents/together-models.js";
+// Together AI constants are now defined inline in onboard-auth.config-core.ts
+export { TOGETHER_DEFAULT_MODEL_REF } from "./onboard-auth.credentials.js";
