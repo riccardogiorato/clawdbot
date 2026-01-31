@@ -4,8 +4,8 @@ read_when:
   - You want to use Together AI with Moltbot
   - You need the API key env var or CLI auth choice
 ---
-# Together AI
 
+# Together AI
 
 The [Together AI](https://together.ai) provides access to leading open-source models including Llama, DeepSeek, Kimi, and more through a unified API.
 
@@ -15,21 +15,21 @@ The [Together AI](https://together.ai) provides access to leading open-source mo
 
 ## Quick start
 
-1) Set the API key (recommended: store it for the Gateway):
+1. Set the API key (recommended: store it for the Gateway):
 
 ```bash
 moltbot onboard --auth-choice together-api-key
 ```
 
-2) Set a default model:
+2. Set a default model:
 
 ```json5
 {
   agents: {
     defaults: {
-      model: { primary: "together/zai-org/GLM-4.7" }
-    }
-  }
+      model: { primary: "together/zai-org/GLM-4.7" },
+    },
+  },
 }
 ```
 

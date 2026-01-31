@@ -125,7 +125,7 @@ export function buildTogetherModelDefinition(
     name: model.name,
     api: "openai-completions",
     reasoning: model.reasoning,
-    input: model.input as ("text" | "image")[],
+    input: model.input,
     cost: model.cost,
     contextWindow: model.contextWindow,
     maxTokens: model.maxTokens,

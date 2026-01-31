@@ -465,7 +465,7 @@ export function applyVeniceConfig(cfg: OpenClawConfig): OpenClawConfig {
   };
 }
 
-export function applyTogetherProviderConfig(cfg: MoltbotConfig): MoltbotConfig {
+export function applyTogetherProviderConfig(cfg: OpenClawConfig): OpenClawConfig {
   const models = { ...cfg.agents?.defaults?.models };
   models[TOGETHER_DEFAULT_MODEL_REF] = {
     ...models[TOGETHER_DEFAULT_MODEL_REF],
@@ -517,7 +517,7 @@ export function applyTogetherProviderConfig(cfg: MoltbotConfig): MoltbotConfig {
   };
 }
 
-export function applyTogetherConfig(cfg: MoltbotConfig): MoltbotConfig {
+export function applyTogetherConfig(cfg: OpenClawConfig): OpenClawConfig {
   const next = applyTogetherProviderConfig(cfg);
   const existingModel = next.agents?.defaults?.model;
   return {

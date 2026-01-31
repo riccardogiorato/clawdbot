@@ -439,8 +439,12 @@ export async function applyNonInteractiveAuthChoice(params: {
       envVar: "TOGETHER_API_KEY",
       runtime,
     });
-    if (!resolved) return null;
-    if (resolved.source !== "profile") await setTogetherApiKey(resolved.key);
+    if (!resolved) {
+      return null;
+    }
+    if (resolved.source !== "profile") {
+      await setTogetherApiKey(resolved.key);
+    }
     nextConfig = applyAuthProfileConfig(nextConfig, {
       profileId: "together:default",
       provider: "together",
